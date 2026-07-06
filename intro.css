@@ -1,0 +1,39 @@
+body{
+
+    margin:0;
+
+    background:#000;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+    font-family:Georgia,serif;
+
+}
+
+.intro{
+
+    width:80%;
+
+    text-align:center;
+
+}
+
+#text{
+
+    font-size:28px;
+
+    line-height:1.8;
+
+    opacity:0;
+
+    transition:opacity .8s;
+
+}

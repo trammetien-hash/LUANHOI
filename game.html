@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luân Hồi</title>
+
+    <link rel="stylesheet" href="game.css">
+   <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <h1>LUÂN HỒI</h1>
+
+        <p class="subtitle">
+            Hãy chọn vai trò của bạn
+        </p>
+
+        <section class="roles">
+
+            <button class="role active">
+
+                <span class="name">
+                    Diêm Vương
+                </span>
+
+            </button>
+
+            <button class="role" disabled>
+
+                <span class="name">
+                    Phán Quan
+                </span>
+
+                <span class="status">
+                    Sắp cập nhật
+                </span>
+
+            </button>
+
+            <button class="role" disabled>
+
+                <span class="name">
+                    Quỷ Sai
+                </span>
+
+                <span class="status">
+                    Sắp cập nhật
+                </span>
+
+            </button>
+
+            <button class="role" disabled>
+
+                <span class="name">
+                    Thư Ký Sinh Tử
+                </span>
+
+                <span class="status">
+                    Sắp cập nhật
+                </span>
+
+            </button>
+
+        </section>
+
+<div id="popup" class="popup hidden">
+
+    <div class="popup-panel">
+
+        <p class="popup-message">
+            Ngươi sẽ đảm nhận<br>
+            vai trò <span id="role-name">Diêm Vương</span>.
+        </p>
+
+        <div class="popup-choice">
+
+            <button id="yes" class="selected">
+                > Có
+            </button>
+
+            <button id="no">
+                Không
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </main>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>

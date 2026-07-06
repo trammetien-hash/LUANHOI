@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luân Hồi - Hồ sơ</title>
+
+    <link rel="stylesheet" href="judgement.css">
+
+</head>
+
+<body>
+
+    <main class="game">
+
+        <h1 id="case-id" class="title">
+            HỒ SƠ 0001
+        </h1>
+
+        <section class="section profile">
+
+            <div class="info">
+
+                <p><span class="label">Tên</span><span class="colon">:</span><span id="name"></span></p>
+
+                <p><span class="label">Tuổi</span><span class="colon">:</span><span id="age"></span></p>
+
+                <p><span class="label">Giới tính</span><span class="colon">:</span><span id="gender"></span></p>
+
+                <p><span class="label">Nghề nghiệp</span><span class="colon">:</span><span id="job"></span></p>
+
+                <p><span class="label">Thời điểm tử vong</span><span class="colon">:</span><span id="death-time"></span></p>
+
+                <p><span class="label">Thọ mệnh</span><span class="colon">:</span><span id="lifespan"></span></p>
+
+                <p><span class="label">Nguyên nhân</span><span class="colon">:</span><span id="cause"></span></p>
+
+            </div>
+
+        </section>
+
+        <section class="section story">
+
+            <h2>CUỘC ĐỜI</h2>
+
+            <p id="story"></p>
+
+        </section>
+
+        <section class="section choice">
+
+            <h2>PHÁN QUYẾT</h2>
+
+            <p class="judge-text">
+                chọn phán quyết cho linh hồn này:
+            </p>
+
+            <button class="option selected">18 tầng địa ngục</button>
+
+            <button class="option">Luân hồi</button>
+
+            <button class="option">Dương gian</button>
+
+        </section>
+
+    </main>
+
+    <div id="transition">
+
+        <p id="transition-text"></p>
+
+    </div>
+
+<script src="hoso.js"></script>
+
+<script src="gotoHell.js"></script>
+<script src="reincarnation.js"></script>
+<script src="return.js"></script>
+
+<script src="judgement.js"></script>
+
+</body>
+
+</html>

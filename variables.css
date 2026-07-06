@@ -1,0 +1,20 @@
+:root{
+
+    --bg:#0f0f0f;
+    --surface:#1a1a1a;
+    --surface2:#252525;
+
+    --text:#ffffff;
+    --text2:#b5b5b5;
+
+    --gold:#d4af37;
+    --danger:#d9534f;
+    --success:#4caf50;
+
+    --radius:12px;
+
+    --shadow:0 5px 15px rgba(0,0,0,.3);
+
+    --speed:.25s;
+
+}

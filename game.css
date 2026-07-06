@@ -1,0 +1,206 @@
+body{
+
+    margin:0;
+
+    background:#000;
+
+    color:#fff;
+
+    font-family:Georgia,serif;
+
+}
+
+.game-screen{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 24px;
+
+    box-sizing:border-box;
+
+    animation:fadeIn .8s forwards;
+
+}
+
+.game-screen h1{
+
+    margin:0;
+
+    font-size:46px;
+
+    font-weight:400;
+
+    letter-spacing:8px;
+
+    text-shadow:0 0 10px rgba(255,255,255,.15);
+
+}
+
+.subtitle{
+
+    margin:14px 0 48px;
+
+    color:#9a9a9a;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+}
+
+.roles{
+
+    width:100%;
+
+    max-width:420px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.role{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:18px;
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.role .icon{
+
+    width:36px;
+
+    height:36px;
+
+    margin-bottom:10px;
+
+    object-fit:contain;
+
+    filter:brightness(0) invert(1);
+
+    pointer-events:none;
+
+}
+
+.role .name{
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+    margin-bottom:6px;
+
+}
+
+.role .status{
+
+    font-size:13px;
+
+    color:#8a8a8a;
+
+}
+
+.role.active{
+
+    border-color:#fff;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+.role:hover:not(:disabled){
+
+    border-color:#fff;
+
+    background:rgba(255,255,255,.05);
+
+    transform:translateY(-2px);
+
+}
+
+.role:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+}
+
+#start{
+
+    width:100%;
+
+    max-width:420px;
+
+    margin-top:40px;
+
+    padding:16px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    font-size:16px;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#start:hover{
+
+    border-color:#fff;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

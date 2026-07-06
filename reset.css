@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    background: linear-gradient(
+        180deg,
+        #050505,
+        #101010,
+        #050505
+    );
+
+    color: var(--text);
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.game-title{
+    font-family: "Gang of Three", serif;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.25),
+        0 0 20px rgba(212,175,55,.15);
+}

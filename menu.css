@@ -1,0 +1,94 @@
+.menu{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width: 400px;   /* hoặc 200px */
+    height: auto;
+    margin-bottom:18px;
+
+    opacity:0;
+
+    animation:fadeIn 1.2s forwards;
+
+}
+
+.game-title{
+
+    color:#ffffff;
+
+    font-size:46px;
+
+    font-weight:400;
+
+    letter-spacing:8px;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.15);
+
+    opacity:0;
+
+    animation:fadeIn 1.2s .4s forwards;
+
+}
+
+.tap-start{
+
+    position:absolute;
+
+    bottom:48px;
+
+    color:#9a9a9a;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    animation:blink 1.8s infinite;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes blink{
+
+    0%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.35;
+
+    }
+
+}

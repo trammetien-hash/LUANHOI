@@ -1,0 +1,196 @@
+body{
+
+    margin:0;
+
+    background:#000;
+
+    color:#fff;
+
+    font-family:Georgia,serif;
+
+}
+
+.game{
+
+    width:88%;
+
+    max-width:700px;
+
+    margin:50px auto;
+
+}
+
+.title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    letter-spacing:5px;
+
+    margin-bottom:35px;
+
+}
+
+.section{
+
+    border-top:1px solid #444;
+
+    border-bottom:1px solid #444;
+
+    padding:25px 0;
+
+}
+
+.document{
+
+    border:1px solid #333;
+
+    padding:20px;
+
+}
+
+.document h2{
+
+    margin:20px 0 12px;
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+}
+
+.document h2:first-child{
+
+    margin-top:0;
+
+}
+
+.document p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+.reason{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px 0;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.reason:hover{
+
+    color:#fff;
+
+}
+
+.check{
+
+    width:24px;
+
+}
+
+.confirm-menu{
+
+    margin-top:30px;
+
+    border-top:1px solid #333;
+
+    padding-top:20px;
+
+}
+
+.confirm-option{
+
+    padding:12px 0;
+
+    cursor:pointer;
+
+}
+
+.selected-confirm{
+
+    color:#fff;
+
+}
+
+.selected-confirm::before{
+
+    content:"> ";
+
+}
+
+.notice{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.80);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .3s ease;
+
+    z-index:9999;
+
+}
+
+.notice.show{
+
+    opacity:1;
+
+}
+
+.notice-box{
+
+    width:90%;
+    max-width:1100px;
+
+    text-align:center;
+
+}
+
+.notice-line{
+
+    height:2px;
+
+    background:#777;
+
+    margin:24px 0;
+
+}
+
+.notice-text{
+
+    color:#fff;
+
+    font-size:34px;      /* 32–36px là đẹp */
+
+    font-weight:600;
+
+    letter-spacing:6px;
+
+    line-height:1.5;
+
+}

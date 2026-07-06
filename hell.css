@@ -1,0 +1,284 @@
+body{
+
+    margin:0;
+    background:#000;
+    color:#fff;
+    font-family:Georgia,serif;
+    height:100vh;
+    overflow:hidden;
+
+}
+
+.game{
+
+    width:92%;
+    max-width:700px;
+    height:100vh;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:20px 0;
+    box-sizing:border-box;
+
+}
+
+.title{
+
+    text-align:center;
+    letter-spacing:4px;
+    font-size:34px;
+    margin:10px 0 20px;
+
+}
+
+.section{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    border-top:1px solid #444;
+    border-bottom:1px solid #444;
+
+    padding:15px 0;
+
+    min-height:0;
+
+}
+
+/* ========================= */
+
+.options{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    border:1px solid #333;
+
+    padding:10px 15px;
+
+    min-height:0;
+
+}
+
+.options::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+.options::-webkit-scrollbar-thumb{
+
+    background:#555;
+
+}
+
+/* ========================= */
+
+.option{
+
+    cursor:pointer;
+    padding:10px 0;
+    font-size:20px;
+
+}
+
+.option .arrow{
+
+    display:inline-block;
+    width:25px;
+    visibility:hidden;
+
+}
+
+.option.selected .arrow{
+
+    visibility:visible;
+
+}
+
+/* ========================= */
+
+.floor-info{
+
+    display:none;
+
+    margin-left:25px;
+    margin-bottom:15px;
+
+    color:#bdbdbd;
+
+    font-size:16px;
+    line-height:1.6;
+
+}
+
+.option.selected + .floor-info{
+
+    display:block;
+
+}
+
+/* ========================= */
+
+.selected-list{
+
+    margin-top:12px;
+
+    padding-top:12px;
+
+    border-top:1px solid #444;
+
+}
+
+.selected-list h2{
+
+    margin:0 0 10px;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+}
+
+#selected-result{
+
+    color:#cfcfcf;
+
+    min-height:24px;
+
+}
+
+/* ========================= */
+
+.judgement-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:8px 0;
+
+}
+
+.remove{
+
+    cursor:pointer;
+
+    color:#888;
+
+    font-size:22px;
+
+    user-select:none;
+
+    transition:.2s;
+
+}
+
+.remove:hover{
+
+    color:#fff;
+
+}
+
+/* ========================= */
+
+.confirm-menu{
+
+    margin-top:15px;
+
+    border-top:1px solid #444;
+
+    padding-top:12px;
+
+}
+
+.confirm-option{
+
+    padding:8px 0;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+.confirm-option .arrow{
+
+    display:inline-block;
+
+    width:25px;
+
+}
+
+.notice{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.80);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .3s ease;
+
+    z-index:9999;
+
+}
+
+.notice.show{
+
+    opacity:1;
+
+}
+
+.notice-box{
+
+    width:90%;
+
+    max-width:1000px;
+
+    text-align:center;
+
+}
+
+.notice-line{
+
+    width:100%;
+
+    height:2px;
+
+    background:#777;
+
+    margin:24px 0;
+
+}
+
+.notice-text{
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:600;
+
+    letter-spacing:8px;
+
+    line-height:1.5;
+
+}

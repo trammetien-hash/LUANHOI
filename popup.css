@@ -1,0 +1,83 @@
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.75);
+
+    z-index:999;
+
+    opacity:1;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.popup-panel{
+
+    text-align:center;
+
+    animation:fadeIn .25s;
+
+}
+
+.popup-message{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    letter-spacing:2px;
+
+    margin-bottom:36px;
+
+}
+
+.popup-choice{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.popup-choice button{
+
+    background:none;
+
+    border:none;
+
+    color:#8f8f8f;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition: color .15s ease;;
+
+}
+
+.popup-choice button.selected{
+
+    color:#fff;
+
+}
+
+.popup-choice button:hover{
+
+    color:#fff;
+
+}
